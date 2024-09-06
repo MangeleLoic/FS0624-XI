@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 interface Article {
   id: string;
   title: string;
-  publishedAt: string;
+  published_at: string;
   image_url: string;
   summary: string;
   [key: string]: any;

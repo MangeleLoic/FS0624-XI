@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 interface Article {
   id: string;
   title: string;
-  publishedAt: string;
+  published_at: string;
   image_url: string;
   summary: string;
   [key: string]: any;
@@ -24,7 +24,7 @@ const SingleArticle: React.FC<SingleArticleProps> = ({ article }) => {
           <h5 className="card-title">{article.title}</h5>
           <p className="card-text">{article.summary}</p>
           <p className="card-text">
-            <small className="text-muted">{new Date(article.publishedAt).toLocaleDateString()}</small>
+            <small className="text-muted">{new Date(article.published_at).toLocaleDateString()}</small>
           </p>
         </div>
       </Link>
